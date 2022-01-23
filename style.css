@@ -1,0 +1,30 @@
+.my-button{
+   background-color: #ebdde673;
+   
+    width: 75%;
+}
+
+.list{
+    border-radius: 20px;
+    height: 480px;
+     
+}
+.list li{
+    list-style: none;
+}
+
+.margin-top{
+    margin-top: 100px;
+}
+
+
+.my-button2{
+    margin-top: 100px;
+  
+   
+}
+.hot{
+    left: 200px;
+    top: -10px;
+}
+
