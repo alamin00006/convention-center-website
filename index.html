@@ -19,7 +19,7 @@
 <header class="mb-5">
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
         <div class="container">
-          <a class="navbar-brand fw-bold fs-4" href="#">Wedding Event Management
+          <a class="navbar-brand fw-bold fs-5" href="#">Wedding Convention Center
 
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +99,7 @@
 
 <!-- main part -->
 <main>
-    
+      
     <section class="container">
         <h2 class="text-center mb-5 display-5 fw-bold">Our Package</h2>
 
@@ -265,10 +265,10 @@
            </div>
        </div>
     </section>
-
+     
     <!-- Frequently Asked Questions -->
 
-    <section class="container">
+    <section class="container position-relative">
         <h2 class=" text-center fw-bold display-5 frequently-asked-q"> Frequently Asked Questions </h2>
         <div class="row align-items-center my-question">
           <div class="col-lg-7 col-md-6">
@@ -315,8 +315,7 @@
                     </div>
                   </div>
                 </div>
-                
-                
+                                
               </div>
 
         </div>
@@ -325,12 +324,28 @@
 
       </div>
         </div>
+      <!-- Toast -->
+      <div class="toast position-absolute my-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+              <button type="button" class="btn-close position-relative option-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+          </svg>
+          <span class="fs-5">20% off on next booking</span>
+        </div>
+    </div>
     </section>
+
+    <!-- My bonus part -->
     <section class="mb-5">
       <h2 class="text-center display-4 fw-bold">Our Social Network</h2>
       <p class="text-center fs-4 mb-5">Get in touch with us in social sites
       </p>
-      <div class="d-flex justify-content-center fs-1">
+      <div class="d-flex justify-content-center display-3 our-social">
         <div>
           <a href="" class="px-5">
             <i class="fab fa-facebook-f"></i>
@@ -350,10 +365,9 @@
     </section>
 </main>
 
-
 <!-- footer section -->
 <footer class="bg-dark pt-5 pb-5" >
-   <div class="container d-lg-flex d-md-flex 
+   <div class="container d-lg-flex d-md-flex my-footer
    justify-content-lg-between justify-content-md-between
    
     align-items-lg-center align-items-md-center" >
@@ -379,8 +393,14 @@
 </footer>
 
 
-
-
+<!-- Toast Script -->
+<script>
+  window.onload = (e) => {
+      let myToast = document.querySelector('.toast');
+      let bsToast = new bootstrap.Toast(myToast);
+      bsToast.show();
+  }
+</script>
 
 <!-- Bootstrap Script link     -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
