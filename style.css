@@ -1,3 +1,23 @@
+/* only mobile device responsive */
+@media only screen and (max-width: 600px) {
+   
+    .image{
+        width: 100%;
+        height: 250px;
+        
+    }
+    .image-title h5{
+        font-size: 16px;
+       
+    }
+    .image-title p, a{
+        font-size: 14px;
+        
+ }
+     
+} 
+/* only mobile device responsive end */
+
 .my-button{
    background-color: #ebdde673;
    
@@ -24,8 +44,8 @@
    
 }
 .hot{
-    left: 200px;
-    top: -10px;
+    left: 240px;
+    top: -12px;
 }
 
 
@@ -36,3 +56,4 @@
 .my-question{
     margin-bottom: 100px; 
 }
+
